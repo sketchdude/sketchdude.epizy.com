@@ -5,6 +5,8 @@
  This reflects that a div is being used along with the number of indents in the HTML code.
 */
 
+/*
+
 * {
   margin: 0px;
 }
@@ -12,12 +14,10 @@
 body {
   font-family: Verdana, Helvetica, Arial, sans-serif;
   font-size: large;
-  /* color: #2A2A66; */
   background-color: #3b436b;
 }
 
 p {
-/*  font-size: 95%; */
   color: #000000;
   line-height: 1.30em;
   text-indent: 1em;
@@ -201,7 +201,7 @@ a.greenbutton:hover, a.greenbutton:active {
 }
 
 #odds h2 {
-/*  color: #4343FE; */
+
   text-align: center;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -225,8 +225,6 @@ p.odd_bot {
 }
 
 #new_div {
-/*  background-color: #370000; */
-/*  width: 530px; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
@@ -235,13 +233,11 @@ p.odd_bot {
 
 #new_div h3 {
   text-align: center;
-/*  color: #4343FE; */
 }
 
 #new_div p, li {
   margin-top: 10px;
   margin-left: 10px;
-/*  color: #6C6CFD; */
 }
 
 #footer_2 {
@@ -257,21 +253,19 @@ p.odd_bot {
 
 div.gallery {
     margin: 5px;
-    /* border: 1px solid #ccc; */
     float: left;
     width: 180px;
 }
 
 div.gallery:hover {
-   /*  border: 1px solid #777; */
 }
 
 div.gallery img {
-    /* width: 100%;
-    height: auto; */
 }
 
 div.desc {
     padding: 15px;
     text-align: center;
 }
+
+*/
