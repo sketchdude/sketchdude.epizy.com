@@ -36,6 +36,17 @@ main {
   margin: auto;
 }
 
+main.gallery {
+  display: grid;
+  padding: 15px;
+}
+
+main.gallery h1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 130%;  
+}
+
 main h1 {
   text-align: center;
   padding: 15px;
@@ -56,6 +67,14 @@ main p {
 main p.caption {
   font-size: 80%;
   padding: 5px;
+}
+
+.gallery figcaption {
+  font-size: 65%;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 nav {
