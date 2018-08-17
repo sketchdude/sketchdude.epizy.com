@@ -47,6 +47,13 @@ main.gallery h1 {
   font-size: 130%;  
 }
 
+main.gallery p {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: left;
+  margin-bottom: 15px;  
+}
+
 main h1 {
   text-align: center;
   padding: 15px;
