@@ -60,6 +60,10 @@ main h1 {
   font-size: 175%;
 }
 
+main h3 {
+  text-align: center;
+}
+
 main img {
   display: block;
   margin: auto;
@@ -69,6 +73,10 @@ main p {
   text-align: left;
   font-size: 105%;
   padding: 15px;
+}
+
+main a {
+  color: #000;
 }
 
 main p.caption {
