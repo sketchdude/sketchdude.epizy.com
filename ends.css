@@ -1,67 +1,148 @@
 /* 
-  John Moore 2014 
+  sketchdude (John Moore) 2018 
 
- The ID's and the thumbnail class each have an underscore followed by a number.
- This reflects that a div is being used along with the number of indents in the HTML code.
-*/
+  My first attempt to style html 5 with flexbox and grid.
+
+  sketchdude@gmail.com
+
+*/ 
 
 * {
-  margin: 0px;
+  margin: 0;
 }
 
 body {
   font-family: Verdana, Helvetica, Arial, sans-serif;
   font-size: large;
-  /* color: #2A2A66; */
   background-color: #3b436b;
 }
 
-p {
-/*  font-size: 95%; */
-  color: #000000;
-  line-height: 1.30em;
-  text-indent: 1em;
-  padding-bottom: 1.30em;
+header {
+  width: 922px;
+  height: 122px;
+  margin: 10px auto 0 auto;
 }
 
-p.caption {
-  font-size: 85%;
+section {
+  width: 922px;
+  margin: 0 auto 0 auto;
+  background-image: url(images/column5.png);
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+main {
+  width: 722px;
+  margin: auto;
+}
+
+main.gallery {
+  display: grid;
+  padding: 15px;
+}
+
+main.gallery h1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 130%;  
+}
+
+main.gallery p {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: left;
+  margin-bottom: 15px;  
+}
+
+main h1 {
+  text-align: center;
+  padding: 15px;
+  font-size: 175%;
+}
+
+main h3 {
   text-align: center;
 }
 
-h1 {
-  font-size: 140%;
-  padding-bottom: 0.25em;
+main img {
+  display: block;
+  margin: auto;
+}
+
+main p {
+  text-align: left;
+  font-size: 105%;
+  padding: 15px;
+}
+
+main a {
+  color: #000;
+}
+
+main p.caption {
+  font-size: 80%;
+  padding: 5px;
   text-align: center;
-  margin-top: 25px;
+}
+
+.gallery figcaption {
+  font-size: 65%;
+  font-weight: bold;
+  width: 85%;
+  text-align: center;
+  margin-top: 5px;
   margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.art_caption {
-  text-align: center;
+nav {
+  width: 200px;
 }
 
-a {
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0;
+}
+
+nav li {
+  line-height: 2em;
+  margin-left: 15px;
+}
+
+nav a {
   color: #4343FE;
   font-size: 1.4em;
   font-weight: bold;
   text-decoration: none;
 }
 
-a:link {
-  color: #4343FE;
-}
-
-a:visited {
-  color: #4343FE;
-}
-
-a:hover {
+nav a:hover {
   color: #8C8CE4;
 }
 
-a:active {
-  color: #red;
+nav a:active {
+  color: red;
+}
+
+nav form {
+  margin-left: 25px;
+}
+
+footer {
+  width: 922px;
+  height: 62px;
+  margin: 0 auto;
+  background-image: url(images/footer.png);
+}
+
+footer p {
+  text-align: center;
+  line-height: 62px;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 70%;
 }
 
 a.contact:link, a.contact:visited {
@@ -75,203 +156,7 @@ a.contact:hover, a.contact:active {
   font-size: 80%;
 }
 
-img.main {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 0px 8px 0px;
-}
-
-#wrapper_1 {
-  width: 922px;
-  margin: 7px auto 8px auto;
-}
-
-a.greenbutton, a.greenbutton:visited {
-  color: #000000;
-  font-size: 90%;
-  font-weight: normal; 
-  text-decoration: underline;
-}
-
-a.greenbutton:hover, a.greenbutton:active {
-  color: blue;
-  font-size: 90%;
-  font-weight: normal; 
-  text-decoration: underline;
-}
-
-#header_2 {
-  background: url('images/header.png');
-  margin-bottom: 0px;
-  height: 124px;
-}
-
-#faux_2 {
-  background: url('images/column5.png');
-  margin-bottom: 0px;
-  overflow: auto;
-  width: 100%;
-}
-
-#left_3 {
-  float: left;
-}
-
-#navbox_4 {
-  margin-left: 0;
-  padding: 5px;
-}
-
-#navbox_4 ul { 
+ul.mailing_address {
   list-style-type: none;
-  margin: 0;
-  padding: 0; 
-}
-
-#right_3 {
-  padding: 10px;
-  margin: 0px 0px 0px 200px;
-}
-
-#right_3 ul {
-  list-style-type: none; 
-  margin: 0;
-  padding: 0;
-}
-
-.page_art {
-  margin: 0px;
-  padding: 0px;
-}
-
-.art_image {
-  margin: 0px;
-  padding: 0px;
-}
-
-#gallery_4 {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.paintings_gallery {
-  color: #5F678F;
-  background-color: #EDEDFF;
-  border: 11px solid #EEF0F6;
-  margin: 0px auto 0px auto;
-}
-
-.paintings_gallery td {
-  color: #5F678F;
-  background-color: #EEF0F6;
-  padding: 0px;
-}
-
-.paintings_gallery2 {
-  color: #5F678F;
-  background-color: #EDEDFF;
-  border: 11px solid #EEF0F6;
-  margin: 0px auto 0px auto;
-}
-
-.paintings_gallery2 td p {
-  color: #5F678F;
-  background-color: #EEF0F6;
-  padding: 10px;
-}
-
-.ends {
-  float: right;
-  margin-left: 10px;
-}
-
-#paypal {
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-#odds {
-  width: 550px;
-  background: url('images/sketchdude-1p.png');
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#odds h2 {
-/*  color: #4343FE; */
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-
-p.odd_top {
-  margin-left: 10px;
-  width: 425px;
-  color: #6C6CFD;
-}
-
-p.odd_mid {
-  margin-left: 10px;
-  width: 420px;
-  color: #A1A1FB;
-}
-
-p.odd_bot {
-  margin-left: 10px;
-  width: 425px;
-}
-
-#new_div {
-/*  background-color: #370000; */
-/*  width: 530px; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  padding: 10px 10px 15px 10px;
-}
-
-#new_div h3 {
-  text-align: center;
-/*  color: #4343FE; */
-}
-
-#new_div p, li {
-  margin-top: 10px;
-  margin-left: 10px;
-/*  color: #6C6CFD; */
-}
-
-#footer_2 {
-  background: url('images/footer.png');
-  height: 54px;
-  text-align: center;
-  padding: 9px 0px 0px 0px;
-  color: #7171D9;
-  font-size: 87%;
-}
-
-#footer_2 p { margin-top: 15px; }
-
-div.gallery {
-    margin: 5px;
-    /* border: 1px solid #ccc; */
-    float: left;
-    width: 180px;
-}
-
-div.gallery:hover {
-   /*  border: 1px solid #777; */
-}
-
-div.gallery img {
-    /* width: 100%;
-    height: auto; */
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
+  margin-left: 195px;
 }
