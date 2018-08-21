@@ -26,7 +26,7 @@ header {
 div.container {
   width: 922px;
   margin: 0 auto 0 auto;
-  background-image: url(images/column5.png);
+  background-image: url(../images/column5.png);
   display: flex;
   flex-direction: row-reverse;  
 }
@@ -134,7 +134,7 @@ footer {
   width: 922px;
   height: 62px;
   margin: 0 auto;
-  background-image: url(images/footer.png);
+  background-image: url(../images/footer.png);
 }
 
 footer p {
